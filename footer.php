@@ -1,7 +1,7 @@
 </body>
 
 <footer>
-©mizushin
+ ©mizushin
 </footer>
 
 </html>
