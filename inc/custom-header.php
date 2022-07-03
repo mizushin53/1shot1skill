@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package oneshot
+ * @package yuyujiteki
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses oneshot_header_style()
+ * @uses yuyujiteki_header_style()
  */
-function oneshot_custom_header_setup() {
+function yuyujiteki_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'oneshot_custom_header_args',
+			'yuyujiteki_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'oneshot_header_style',
+				'wp-head-callback'   => 'yuyujiteki_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'oneshot_custom_header_setup' );
+add_action( 'after_setup_theme', 'yuyujiteki_custom_header_setup' );
 
-if ( ! function_exists( 'oneshot_header_style' ) ) :
+if ( ! function_exists( 'yuyujiteki_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see oneshot_custom_header_setup().
+	 * @see yuyujiteki_custom_header_setup().
 	 */
-	function oneshot_header_style() {
+	function yuyujiteki_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package oneshot
+ * @package yuyujiteki
  */
 
 get_header();
